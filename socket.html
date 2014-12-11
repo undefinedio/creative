@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.IO</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+</head>
+<body>
+    <input type="text" class="js-text"/>
+    <button class="js-send">Click me</button>
+</body>
+<script>
+    var socket = io();
+    $(".js-send").on('click', function() {
+        socket.emit('message', $('.js-text').val());
+    });
+</script>
+</html>

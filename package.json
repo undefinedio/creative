@@ -1,0 +1,19 @@
+{
+  "name": "twitter-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cylon": "^0.21.2",
+    "cylon-keyboard": "^0.11.0",
+    "express": "^4.10.2",
+    "node-twitter": "^0.5.2",
+    "socket.io": "^1.2.1",
+    "twit": "^1.1.18"
+  }
+}
